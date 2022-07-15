@@ -1,0 +1,1225 @@
+{
+    "meta": {
+        "__export_time": 1647514793426,
+        "__export_app": "firecamp_v2.6.0 ↺",
+        "__export_version": 1
+    },
+    "project": {
+        "name": "Media",
+        "description": "",
+        "auth": {},
+        "scripts": {
+            "pre": "",
+            "post": "",
+            "test": ""
+        },
+        "meta": {
+            "active_auth": "no_auth"
+        }
+    },
+    "modules": [
+        {
+            "name": "Post Manage",
+            "auth": {
+                "inherit": {}
+            },
+            "scripts": {
+                "pre": "",
+                "post": "",
+                "test": ""
+            },
+            "requests": [
+                {
+                    "meta": {
+                        "name": "All",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Post",
+                        "description": "",
+                        "active_auth": "bearer",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "auth": {
+                        "bearer": {
+                            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMyZWYyNDYzMGJjMzE3ZDg2NDk1NzQiLCJuYW1lIjoiQWcgQWciLCJlbWFpbCI6ImFnYWdAZ21haWwuY29tIiwicGhvbmUiOiIwOTcwMDcwMDcwMCIsImNyZWF0ZWQiOiIyMDIyLTAzLTE3VDA4OjE5OjQ4LjY4N1oiLCJpYXQiOjE2NDc1MTQ0NDMsImV4cCI6MTY0NzUxODA0M30.Cw7cHGEYvRD8xFZTxb-dmqsK8kzT3TI8yAGZxdRl8hE",
+                            "prefix": ""
+                        }
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "multipart/form-data",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n    \"title\":\"Post Title 4\",\r\n    \"desc\":\"Post Content 4\",\r\n    \"user\":\"622d5097bc99f2f5827ce46e\"\r\n}",
+                                    "headers": []
+                                },
+                                "multipart/form-data": {
+                                    "value": [
+                                        {
+                                            "key": "file",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        },
+                                        {
+                                            "key": "title",
+                                            "value": "Mandalay NEWS 2",
+                                            "disable": false,
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "desc",
+                                            "value": "Mandalay  NEWS  2 Desc.",
+                                            "disable": false,
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "cat",
+                                            "value": "62330c762b581f3fd2b52b73",
+                                            "disable": false,
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "headers": []
+                                }
+                            }
+                        },
+                        {
+                            "name": "Mg Mg Post",
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n    \"user\":\"622c20ce2f418e95023dab52\",\r\n    \"title\":\"Post Title 2\",\r\n    \"desc\":\"Post Content 2\"\r\n}",
+                                    "headers": []
+                                }
+                            },
+                            "meta": {
+                                "is_default": false,
+                                "active_body_type": "application/json"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Single Get",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts/62330f5aabe4bd9552080296",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts/62330f5aabe4bd9552080296",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Patch",
+                        "description": "",
+                        "active_auth": "bearer",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts/62330f5aabe4bd9552080296",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts/62330f5aabe4bd9552080296",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "PATCH",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "auth": {
+                        "bearer": {
+                            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMyZWYyMTYzMGJjMzE3ZDg2NDk1NmYiLCJuYW1lIjoiTWcgTWciLCJlbWFpbCI6Im1nbWdAZ21haWwuY29tIiwicGhvbmUiOiIwOTYwMDYwMDYwMCIsImNyZWF0ZWQiOiIyMDIyLTAzLTE3VDA4OjE5OjQ1LjUzNVoiLCJpYXQiOjE2NDc1MTI5NjIsImV4cCI6MTY0NzUxNjU2Mn0.gSxpmcMm3cnXbDbbqeJZthpSd9waCq1ZdlE-P8JyQgI",
+                            "prefix": ""
+                        }
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "application/json",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n    \"title\":\"Post One Title\",\r\n    \"desc\":\"This is the description of the Post One\"\r\n}",
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Drop",
+                        "description": "",
+                        "active_auth": "bearer",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts/62330f5aabe4bd9552080296",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts/62330f5aabe4bd9552080296",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "DELETE",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "auth": {
+                        "bearer": {
+                            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMyZWYyMTYzMGJjMzE3ZDg2NDk1NmYiLCJuYW1lIjoiTWcgTWciLCJlbWFpbCI6Im1nbWdAZ21haWwuY29tIiwicGhvbmUiOiIwOTYwMDYwMDYwMCIsImNyZWF0ZWQiOiIyMDIyLTAzLTE3VDA4OjE5OjQ1LjUzNVoiLCJpYXQiOjE2NDc1MTI5NjIsImV4cCI6MTY0NzUxNjU2Mn0.gSxpmcMm3cnXbDbbqeJZthpSd9waCq1ZdlE-P8JyQgI",
+                            "prefix": ""
+                        }
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Posts By Cat Id",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts/bycat/62330c692b581f3fd2b52b6f",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts/bycat/62330c692b581f3fd2b52b6f",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Posts By User",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/posts/byuser/6232ef21630bc317d864956f",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/posts/byuser/6232ef21630bc317d864956f",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "User Manage",
+            "auth": {
+                "inherit": {}
+            },
+            "scripts": {
+                "pre": "",
+                "post": "",
+                "test": ""
+            },
+            "requests": [
+                {
+                    "meta": {
+                        "name": "Login",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/users",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/users",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "application/json",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n  \"phone\":\"09600600600\",\r\n  \"password\":\"123123123\"\r\n}",
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Register",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/users/register",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/users/register",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "application/json",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n  \"name\":\"Mg Mg\",\r\n  \"email\":\"mgmg@gmail.com\",\r\n  \"phone\":\"09600600600\",\r\n  \"password\":\"123123123\"\r\n}",
+                                    "headers": []
+                                }
+                            }
+                        },
+                        {
+                            "name": "Ag Ag",
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n  \"name\":\"Ag Ag\",\r\n  \"email\":\"agag@gmail.com\",\r\n  \"phone\":\"09700700700\",\r\n  \"password\":\"123123123\"\r\n}",
+                                    "headers": []
+                                }
+                            },
+                            "meta": {
+                                "is_default": false,
+                                "active_body_type": "application/json"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gallery Manage",
+            "auth": {
+                "inherit": {}
+            },
+            "scripts": {
+                "pre": "",
+                "post": "",
+                "test": ""
+            },
+            "requests": [
+                {
+                    "meta": {
+                        "name": "Single File Upload",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/gallery",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/gallery",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "multipart/form-data",
+                                "is_default": true
+                            },
+                            "body": {
+                                "multipart/form-data": {
+                                    "value": [
+                                        {
+                                            "key": "file",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        }
+                                    ],
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Multiple Files Upload",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/gallery",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/gallery",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "multipart/form-data",
+                                "is_default": true
+                            },
+                            "body": {
+                                "multipart/form-data": {
+                                    "value": [
+                                        {
+                                            "key": "files",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        },
+                                        {
+                                            "key": "files",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        }
+                                    ],
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "All",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/gallery",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/gallery",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Drop By Name",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/gallery/1647174215909_2.jpg",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/gallery/1647174215909_2.jpg",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "DELETE",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Category Manage",
+            "auth": {
+                "inherit": {}
+            },
+            "scripts": {
+                "pre": "",
+                "post": "",
+                "test": ""
+            },
+            "requests": [
+                {
+                    "meta": {
+                        "name": "All",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/cats",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/cats",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Add",
+                        "description": "",
+                        "active_auth": "bearer",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/cats",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/cats",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "auth": {
+                        "bearer": {
+                            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjMyZWYyMTYzMGJjMzE3ZDg2NDk1NmYiLCJuYW1lIjoiTWcgTWciLCJlbWFpbCI6Im1nbWdAZ21haWwuY29tIiwicGhvbmUiOiIwOTYwMDYwMDYwMCIsImNyZWF0ZWQiOiIyMDIyLTAzLTE3VDA4OjE5OjQ1LjUzNVoiLCJpYXQiOjE2NDc1MTI5NjIsImV4cCI6MTY0NzUxNjU2Mn0.gSxpmcMm3cnXbDbbqeJZthpSd9waCq1ZdlE-P8JyQgI",
+                            "prefix": ""
+                        }
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "multipart/form-data",
+                                "is_default": true
+                            },
+                            "body": {
+                                "multipart/form-data": {
+                                    "value": [
+                                        {
+                                            "key": "file",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        },
+                                        {
+                                            "key": "name",
+                                            "value": "Hsipaw",
+                                            "disable": false,
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Single Cat",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/cats/6231f29987e793aaa4620ac0",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/cats/6231f29987e793aaa4620ac0",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "GET",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Patch",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/cats/6231ef2d6d22701fca01ef3d",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/cats/6231ef2d6d22701fca01ef3d",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "PATCH",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "multipart/form-data",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\r\n   \"name\":\"Siggai\"\r\n}",
+                                    "headers": []
+                                },
+                                "multipart/form-data": {
+                                    "value": [
+                                        {
+                                            "key": "file",
+                                            "value": "",
+                                            "disable": false,
+                                            "type": "file"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Drop",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0"
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/cats/6231f29987e793aaa4620ac0",
+                        "auth": "",
+                        "host": "localhost:3000",
+                        "port": "3000",
+                        "hostname": "localhost",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://localhost:3000",
+                        "href": "http://localhost:3000/cats/6231f29987e793aaa4620ac0",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "DELETE",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "requests": [],
+    "environments": [
+        {
+            "name": "Production",
+            "variables": {
+                "variable_name": "variable_value"
+            }
+        },
+        {
+            "name": "Development",
+            "variables": {
+                "variable_name": "variable_value"
+            }
+        }
+    ]
+}
